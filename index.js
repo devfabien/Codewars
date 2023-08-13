@@ -6,26 +6,26 @@
 //  console.log(uniqueFlavors);
 
 
-function check(arr){
-    let res=[];
-    for(let vv of arr){
-     return vv.match(/\d+/g).map(Number)
-    }
-
-}
-console.log(check(['wow32','ry65f']))
-
-
 // function check(arr){
 //     let res=[];
 //     for(let vv of arr){
-//      return  vv.split('').filter(item=> Number(item)).join(',');
+//      return vv.match(/\d+/g).map(Number)
+//     }
+
+// }
+// console.log(check(['wow32','ry65f']))
+
+
+function check(arr){
+    let res=[];
+    for(let vv of arr){
+     return  vv.split('').filter(item=> Number(item)).join(',');
      
   
-//     }
+    }
   
-// }
-// console.log(check(['wow32','ry65f',7]))
+}
+console.log(check(['wow32','ry65f',7]))
 // function check(arr){
 //     let result=[];
 //     for(let value of arr){
