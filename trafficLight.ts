@@ -6,8 +6,8 @@ Complete the function that takes a string as an argument representing the curren
 For example, when the input is green, output should be yellow. */
 
 export function updateLight(current: string): string {
-     if(current=='green') return 'yellow';
-      if(current =='yellow') return 'red';
-      return 'green'
-    //   return current=='green'? 'yellow':current=='yellow'?'red':'green'
+    //  if(current=='green') return 'yellow';
+    //   if(current =='yellow') return 'red';
+    //   return 'green'
+      return current=='green'? 'yellow':current=='yellow'?'red':'green'
     }
