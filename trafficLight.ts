@@ -11,3 +11,4 @@ export function updateLight(current: string): string {
     //   return 'green'
       return current=='green'? 'yellow':current=='yellow'?'red':'green'
     }
+    console.log(updateLight('green'))
