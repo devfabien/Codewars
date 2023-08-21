@@ -10,7 +10,10 @@ isIsogram "Dermatoglyphics" = true
 isIsogram "moose" = false
 isIsogram "aba" = false */
 
+// export function isIsogram(str: string): boolean{
+//     let uniqueText=[...new Set(str.toLowerCase())].join('').length
+//     return str.length==uniqueText
+//    }
 export function isIsogram(str: string): boolean{
-    let uniqueText=[...new Set(str.toLowerCase())].join('').length
-    return str.length==uniqueText
-   }
+    return new Set(str.toUpperCase()).size==str.length
+  }
