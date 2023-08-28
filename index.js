@@ -26,11 +26,17 @@
   
 // }
 // console.log(check(['wow32','ry65f',7]))
-function check(arr){
-    let result=[];
-    for(let value of arr){
-result.push(value.replace(/\D/g, ""));
-    }
-    return result;
+// function check(arr){
+//     let result=[];
+//     for(let value of arr){
+// result.push(value.replace(/\D/g, ""));
+//     }
+//     return result;
+// }
+// console.log(check(['fjhg432h','jfh5981b']));
+
+function hello(){
+    return "helooo!"
 }
-console.log(check(['fjhg432h','jfh5981b']));
+hello()
+ 
