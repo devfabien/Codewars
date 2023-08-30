@@ -30,24 +30,21 @@ The two arrays have the same size (> 0) given as parameter in function comp.
 
  */
 
+// export function comp(a1: number[] | null, a2: number[] | null): boolean {
+//     if(Array.isArray(a1) && Array.isArray(a2)){
+//       let newA1:number[]= a1.sort((a,b)=>a-b);
+//      let newA2:number[]= a2.sort((a,b)=>a-b);
+//       let result:number[] = newA1.map(item=> item*item)
+     
+//  return newA2.join('') == result.join('')
+//      }
+//    else{
+//      return false
+//    }
+//   }
+
+
 export function comp(a1: number[] | null, a2: number[] | null): boolean {
-    if(Array.isArray(a1) && Array.isArray(a2)){
-      let newA1:number[]= a1.sort((a,b)=>a-b);
-     let newA2:number[]= a2.sort((a,b)=>a-b);
-      let result:number[] = newA1.map(item=> item*item)
-     
- //      for(let i =0 ;i<result.length;i++){
- //        if(result[i]!=newA2[i]) ans= false;
- //        ans= true;
- //      }
- //      console.log(newA2)
- //      console.log(result)
- return newA2.join('') == result.join('')
-    
-     
-      
-     }
-   else{
-     return false
-   }
+    if(!(Array.isArray(a1) && Array.isArray(a2))) return false
+    return a1.map(value=>value*value).sort((a,b)=>a-b).join('')== a2.sort((a,b)=>a-b).join('')
   }
