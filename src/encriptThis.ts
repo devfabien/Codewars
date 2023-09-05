@@ -30,3 +30,13 @@ export const encryptThis = (str: string): string => {
   }).join('')).join(' ');
     return swapping.split(' ').map((item,i)=>item.replace(item.charAt(0),item.charCodeAt(0).toString())).join(' ')
   }
+
+  ///// by using regular expressions
+
+  export const encryptThi = (str: string): string =>
+  str
+    .split(' ')
+    .map(word => word
+        .replace(/(^\w)(\w)(\w*)(\w$)/, `$1$4$3$2`)
+        .replace(/^\w/, letter => letter.charCodeAt(0).toFixed(0)))
+    .join(' ');
