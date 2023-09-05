@@ -31,7 +31,7 @@ export const encryptThis = (str: string): string => {
     return swapping.split(' ').map((item,i)=>item.replace(item.charAt(0),item.charCodeAt(0).toString())).join(' ')
   }
 
-  ///// by using regular expressions
+  ///// by using regular expressions 
 
   export const encryptThi = (str: string): string =>
   str
