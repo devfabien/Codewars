@@ -16,7 +16,7 @@ Keepin' it simple: There are no special characters in the input.
 Examples:
 encryptThis "Hello" == "72olle"
 encryptThis "good" == "103doo"
-encryptThis "hello world" == "104olle 119drlo" */
+encryptThis "hello world" == "104olle 119drlo" */ 
 
 export const encryptThis = (str: string): string => {
     // Your code goes here
