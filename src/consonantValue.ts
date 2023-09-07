@@ -20,3 +20,8 @@ If you like this Kata, please try:
 Word values
 
 Vowel-consonant lexicon */
+
+export function solve(s: string) {
+    let newS:any=new RegExp("[aeiouAEIOU]",'g');
+     let str:any=s.replace(newS,' ')
+}
