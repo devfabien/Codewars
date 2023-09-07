@@ -28,4 +28,5 @@ export function solve(s: string) {
      for(let i=97;i<=122; i++){
        charArr.push(String.fromCharCode(i));
      }
+     str.split(' ').map((char:string)=>char.split('').map((vl:string)=>charArr.indexOf(vl)+1))
 }
