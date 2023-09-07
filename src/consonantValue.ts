@@ -23,5 +23,9 @@ Vowel-consonant lexicon */
 
 export function solve(s: string) {
     let newS:any=new RegExp("[aeiouAEIOU]",'g');
-     let str:any=s.replace(newS,' ')
+     let str:any=s.replace(newS,' ');
+     let charArr:string[]=[];
+     for(let i=97;i<=122; i++){
+       charArr.push(String.fromCharCode(i));
+     }
 }
