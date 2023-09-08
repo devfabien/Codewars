@@ -27,5 +27,11 @@ export function revRot(s:string, sz:number): string {
     for (let i = 0; i < s.length; i += sz) {
        chunks.push(s.slice(i, i + sz).split(''));
     }
-   
+    if (chunks[chunks.length-1].length < sz) chunks.pop();
+    
+    return chunks.map(chunk => (
+      chunk.reduce((sum, n) => sum + +n, 0) % 2 === 0 ? 
+        chunk.reverse().join('') : 
+        chunk.slice(1).join('') + chunk[0]
+    )).join('')
   }
