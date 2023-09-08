@@ -20,3 +20,8 @@ revrot("123456779", 0) --> ""
 revrot("563000655734469485", 4) --> "0365065073456944"
 Example of a string rotated to the left by one position:
 s = "123456" gives "234561". */
+
+export function revRot(s:string, sz:number): string {
+    if(sz<=0 || sz>s.length || s.length==0) return ""
+
+  }
