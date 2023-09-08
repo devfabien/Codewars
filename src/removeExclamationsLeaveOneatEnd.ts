@@ -9,3 +9,6 @@ Examples
 "!Hi!"    ---> "Hi!"
 "Hi! Hi!" ---> "Hi Hi!"
 "Hi"      ---> "Hi!" */
+export function remove(s: string): string {
+    return s.replaceAll("!","") + "!"
+   }
