@@ -23,5 +23,9 @@ s = "123456" gives "234561". */
 
 export function revRot(s:string, sz:number): string {
     if(sz<=0 || sz>s.length || s.length==0) return ""
-
+  const chunks: string[][] = [];
+    for (let i = 0; i < s.length; i += sz) {
+       chunks.push(s.slice(i, i + sz).split(''));
+    }
+   
   }
