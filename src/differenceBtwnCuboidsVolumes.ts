@@ -7,3 +7,7 @@ For example, if the parameters passed are ([2, 2, 3], [5, 4, 1]), the volume of 
 Your function will be tested with pre-made examples as well as random ones.
 
 If you can, try writing it in one line of code. */
+
+export function findDifference(a: [number, number, number], b: [number, number, number]): number{
+    return Math.abs(a.reduce((as,bs)=>as*bs,1)-b.reduce((as,bs)=>as*bs,1))
+  }
