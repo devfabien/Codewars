@@ -17,6 +17,6 @@ Max product obtained from multiplying 5 * 10  =  50 .
 
 adjacentElementsProduct([-23, 4, -5, 99, -27, 329, -2, 7, -921])  ==>  return -14 */
 export function adjacentElementsProduct(arr: number[]): number {
-    return arr.map((item,index)=> index===arr.length-1?item * arr[index-1]:item * arr[index+1])
+    return Math.max(...arr.map((item,index)=> index===arr.length-1?item * arr[index-1]:item * arr[index+1]))
   
   }
