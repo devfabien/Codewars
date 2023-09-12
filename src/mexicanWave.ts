@@ -12,3 +12,12 @@ Rules
  2.  If the character in the string is whitespace then pass over it as if it was an empty seat
 Example
 wave("hello") => ["Hello", "hEllo", "heLlo", "helLo", "hellO"] */
+
+export function wave(str: string): Array<string>{
+    let res:string[]=[];
+    for(let i=0;i<str.length;i++){
+      if(str.charAt(i)=== ' ')continue;
+     
+    }
+    
+  }
