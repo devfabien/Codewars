@@ -19,5 +19,5 @@ export function wave(str: string): Array<string>{
       if(str.charAt(i)=== ' ')continue;
       res.push(str.substring(0,i)+str.charAt(i).toUpperCase()+str.substring(i+1))
     }
-    
+    return res
   }
