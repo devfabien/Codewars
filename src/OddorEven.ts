@@ -15,3 +15,6 @@ Output: "odd"
 
 Input: [0, -1, -5]
 Output: "even" */
+export function oddOrEven(array: number[]) {
+    return array.reduce((a,b)=>a+b,0)
+  }
