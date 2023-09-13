@@ -24,5 +24,5 @@ export function tribonacci(arr: number[], n: number): number[] {
     for(let i=0;i<n;i++){
       arr.splice(arr.length,1,arr.slice(-3).reduce((a,b)=>a+b,0))
     }
-    return arr
+    return arr.slice(0,n)
   }
