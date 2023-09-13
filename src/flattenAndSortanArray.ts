@@ -15,5 +15,5 @@ http://stackoverflow.com/questions/6093874/why-doesnt-the-sort-function-of-javas
 
 ARRAYS SORTING FUNDAMENTALS */
 export function flattenAndSort(inputArray: number[][]): number[] {
-    return inputArray.flat()
+    return inputArray.flat().sort((a,b)=>a-b)
   }
