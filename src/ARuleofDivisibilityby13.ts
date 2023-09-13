@@ -58,6 +58,7 @@ export function thirt(n: number): number {
     for(let i=1;i<5;i++){
       console.log(n)
       if(i==4) return n
+    let nums:number[]=Array.from(String(n),Number); 
    
    
     }
