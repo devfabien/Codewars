@@ -55,6 +55,11 @@ FUNDAMENTALS ALGORITHMS MATHEMATICS */
 
 export function thirt(n: number): number {
     let divs:number[]=[1,10,9,12,3,4,1,10,9,12,3,4,1]; 
+    for(let i=1;i<5;i++){
+      console.log(n)
+      if(i==4) return n
    
+   
+    }
     return n
   }
