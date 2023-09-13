@@ -59,7 +59,7 @@ export function thirt(n: number): number {
       console.log(n)
       if(i==4) return n
     let nums:number[]=Array.from(String(n),Number); 
-   
+   n=nums.reverse().map((item:number,index:number)=>item* divs[index]).reduce((a,b)=>a+b,0)
    
     }
     return n
