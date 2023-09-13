@@ -14,3 +14,6 @@ Please, keep in mind, that JavaScript is by default sorting objects alphabetical
 http://stackoverflow.com/questions/6093874/why-doesnt-the-sort-function-of-javascript-work-well
 
 ARRAYS SORTING FUNDAMENTALS */
+export function flattenAndSort(inputArray: number[][]): number[] {
+    return inputArray.flat()
+  }
