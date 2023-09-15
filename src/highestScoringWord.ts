@@ -12,3 +12,9 @@ You need to return the highest scoring word as a string.
 If two words score the same, return the word that appears earliest in the original string.
 
 All letters will be lowercase and all inputs will be valid. */
+
+export const high = (str: string): string =>{
+    let arr:string[]=[]
+   return str
+   
+  }
