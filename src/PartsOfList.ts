@@ -23,6 +23,6 @@ a = ["az", "toto", "picaro", "zone", "kiwi"] -->
 
 export function partlist(arr: string[]): string[][] {
 
-    return arr.map((item,i)=>[arr.slice(0,i+1).join(" ")])
+    return arr.map((item,i)=>[arr.slice(0,i+1).join(" "),arr.slice(i+1,arr.length).join(" ")])
     
    }
