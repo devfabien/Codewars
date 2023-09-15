@@ -15,6 +15,10 @@ All letters will be lowercase and all inputs will be valid. */
 
 export const high = (str: string): string =>{
     let arr:string[]=[]
-   return str
+    for(let i=97;i<=122;i++){
+      arr.push(String.fromCharCode(i))
+    }
+
+  return str
    
   }
