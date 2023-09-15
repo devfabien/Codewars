@@ -18,7 +18,7 @@ export const high = (str: string): string =>{
     for(let i=97;i<=122;i++){
       arr.push(String.fromCharCode(i))
     }
-    let sums:number[]=str.split(' ').map((item)=>item.split('').map((el,i)=>arr.indexOf(el)+1));
+    let sums:number[]=str.split(' ').map((item)=>item.split('').map((el,i)=>arr.indexOf(el)+1).reduce((a,b)=>a+b));
   
   return str
    
