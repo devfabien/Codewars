@@ -19,7 +19,7 @@ export const high = (str: string): string =>{
       arr.push(String.fromCharCode(i))
     }
     let sums:number[]=str.split(' ').map((item)=>item.split('').map((el,i)=>arr.indexOf(el)+1).reduce((a,b)=>a+b));
-  
+  let index:number=sums.indexOf(Math.max(...sums))
   return str
    
   }
