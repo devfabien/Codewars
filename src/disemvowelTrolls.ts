@@ -9,7 +9,7 @@ For example, the string "This website is for losers LOL!" would become "Ths wbst
 
 Note: for this kata y isn't considered a vowel. */
 
-export class Kata {
+ class Kata {
     static disemvowel(str: string): string {
       //regex to check if a character is a vowel
       const regex=/[aeiuo]/gi
